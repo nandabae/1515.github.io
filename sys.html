@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>南大盃排球邀請賽</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo-black.png">
+  </head>
+
+  <body style="background-image: url(../網頁期末/img/bgvol.jpg);background-repeat: repeat;">
+    <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your 洽談外掛程式 code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "121997434645877");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="log" class="bg">
+      <header class="page-header wrapper" id="bgbg">
+          <h1><a href="index.html"><img id="chg" class="logo" src="./img/NUTN-logo-black.png" alt="首頁"></a></h1>
+          <nav>
+              <ul class="main-nav">
+                  <li><a href="index.html" class="shape-ex1">首頁</a></li>
+                  <li><a href="doc.html" class="shape-ex1">競賽章程</a></li>
+                  <li><a href="sys.html" class="shape-ex1">報名系統</a></li>
+                  <li><a href="login.html" class="shape-ex1">登入</a></li>
+              </ul>
+          </nav>
+      </header>
+      <div class="maincontent wrapper">
+        <article>
+          <fieldset>
+            <legend class="mov">我要報名</legend>
+            <fieldset>
+              <legend class="leg">報名資訊</legend>
+              <div class="docup">
+                <tr>
+                  <td>
+                    <label>*報名組別：</label>
+                  </td>
+                  <td>
+                    <select id="group">
+                      <option value="colboy">大專男子組</option>
+                      <option value="colgirl">大專女子組</option>
+                    </select>
+                    <div style="color: red; font-size: 3px; display: inline-block;">*為必填欄位</div>
+                  </td>                  
+                </tr>
+                <br><br>
+                <tr>
+                  <td>
+                    <label>*隊伍名稱：</label>
+                  </td>
+                  <td>
+                    <input required type="text" id="GroupName"><br><br>
+                  </td>
+                </tr>
+                <label>*聯絡人資料：</label><br><br>
+                <tr>
+                  
+                  <td>
+                    <label style="margin-left:48px;">*姓名：</label>
+                  </td>
+                  <td>
+                    <input required type="text" id="ContName"><br><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label style="margin-left:48px;">*電話：</label>
+                  </td>
+                  <td>
+                    <input required type="tel" id="ContTel"><br><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label style="margin-left:48px;">*信箱：</label>
+                  </td>
+                  <td>
+                    <input required type="text" id="ContMail"><br><br>
+                  </td>
+                </tr>                       
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend class="leg">隊員資訊</legend>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">*1</legend>
+                  <label>*姓名：</label><input required type="text" id="ContName1"><br><br>
+                  <label>*生日：</label><input required type="date" id="BD1" class="poi"><br><br>
+                  <label>*身分證字號：</label><input required type="text" id="ID1"><br><br>                
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">*2</legend>
+                <label>*姓名：</label><input required type="text" id="ContName2"><br><br>
+                <label>*生日：</label><input required type="date" id="BD2" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID2"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">*3</legend>
+                <label>*姓名：</label><input required type="text" id="ContName3"><br><br>
+                <label>*生日：</label><input required type="date" id="BD3" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID3"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">*4</legend>
+                <label>*姓名：</label><input required type="text" id="ContName4"><br><br>
+                <label>*生日：</label><input required type="date" id="BD4" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID4"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">*5</legend>
+                <label>*姓名：</label><input required type="text" id="ContName5"><br><br>
+                <label>*生日：</label><input required type="date" id="BD5" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID5"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">*6</legend>
+                <label>*姓名：</label><input required type="text" id="ContName6"><br><br>
+                <label>*生日：</label><input required type="date" id="BD6" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID6"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">7</legend>
+                <label>*姓名：</label><input required type="text" id="ContName7"><br><br>
+                <label>*生日：</label><input required type="date" id="BD7" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID7"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">8</legend>
+                <label>*姓名：</label><input required type="text" id="ContName8"><br><br>
+                <label>*生日：</label><input required type="date" id="BD8" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID8"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">9</legend>
+                <label>*姓名：</label><input required type="text" id="ContName9"><br><br>
+                <label>*生日：</label><input required type="date" id="BD9" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID9"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">10</legend>
+                <label>*姓名：</label><input required type="text" id="ContName10"><br><br>
+                <label>*生日：</label><input required type="date" id="BD10" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID10"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos"> 
+                <legend class="leg1">11</legend>
+                <label>*姓名：</label><input required type="text" id="ContName11"><br><br>
+                <label>*生日：</label><input required type="date" id="BD11" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID11"><br><br>
+              </fieldset>
+              <fieldset style="display: inline-block;" class="pos">
+                <legend class="leg1">12</legend>
+                <label>*姓名：</label><input required type="text" id="ContName12"><br><br>
+                <label>*生日：</label><input required type="date" id="BD12" class="poi"><br><br>
+                <label>*身分證字號：</label><input required type="text" id="ID12"><br><br>
+              </fieldset>
+            </fieldset>            
+          </fieldset>        
+      <hr>
+
+
+      <a>
+        <button class="stobtn" type="submit">儲存</button>
+        <button class="stobtn" onclick="era()">清除</button>
+      </a>
+      <script>
+        function era(){
+            document.getElementById("ContName1").value = "";
+            document.getElementById("BD1").value = "";
+            document.getElementById("ID1").value = "";
+            document.getElementById("ContName2").value = "";
+            document.getElementById("BD2").value = "";
+            document.getElementById("ID2").value = "";
+            document.getElementById("ContName3").value = "";
+            document.getElementById("BD3").value = "";
+            document.getElementById("ID3").value = "";
+            document.getElementById("ContName4").value = "";
+            document.getElementById("BD4").value = "";
+            document.getElementById("ID4").value = "";
+            document.getElementById("ContName5").value = "";
+            document.getElementById("BD5").value = "";
+            document.getElementById("ID5").value = "";
+            document.getElementById("ContName6").value = "";
+            document.getElementById("BD6").value = "";
+            document.getElementById("ID6").value = "";
+            document.getElementById("ContName7").value = "";
+            document.getElementById("BD7").value = "";
+            document.getElementById("ID7").value = "";
+            document.getElementById("ContName8").value = "";
+            document.getElementById("BD8").value = "";
+            document.getElementById("ID8").value = "";
+            document.getElementById("ContName9").value = "";
+            document.getElementById("BD9").value = "";
+            document.getElementById("ID9").value = "";
+            document.getElementById("ContName10").value = "";
+            document.getElementById("BD10").value = "";
+            document.getElementById("ID10").value = "";
+            document.getElementById("ContName11").value = "";
+            document.getElementById("BD11").value = "";
+            document.getElementById("ID11").value = "";
+            document.getElementById("ContName12").value = "";
+            document.getElementById("BD12").value = "";
+            document.getElementById("ID12").value = "";
+            document.getElementById("ContName").value = "";
+            document.getElementById("ContTel").value = "";
+            document.getElementById("ContMail").value = "";
+            document.getElementById("GroupName").value = "";
+        }
+      </script>
+      <script type="module">
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+          
+          const firebaseConfig = {
+            apiKey: "AIzaSyD_2BLBgC6rgJvyPmdaQUZhzESlsZzQvS8",
+            authDomain: "project-3968530077539815055.firebaseapp.com",
+            databaseURL: "https://project-3968530077539815055-default-rtdb.firebaseio.com",
+            projectId: "project-3968530077539815055",
+            storageBucket: "project-3968530077539815055.appspot.com",
+            messagingSenderId: "473669319380",
+            appId: "1:473669319380:web:500b3603593e1949c5d941"
+          };
+        
+          const app = initializeApp(firebaseConfig);
+  
+          import {getDatabase, ref, get, set, child, update, remove}
+          from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+  
+          const db = getDatabase(app);
+
+         
+          var teamname = document.getElementById('GroupName');  
+          var nameBox = document.getElementById('NameBox');
+          var rollBox = document.getElementById('RollBox');
+          var secBox = document.getElementById('SecBox');
+          var genBox = document.getElementById('GenBox');
+  
+          var insBtn = document.getElementById('Insbtn');
+          var selBtn = document.getElementById('Selbtn');
+          var updBtn = document.getElementById('Updbtn');
+          var delBtn = document.getElementById('Delbtn');
+  
+          function InsertData(){
+              set(ref(db, 'TheStudents/' + rollBox.value),{
+                  NameOfStd: nameBox.value,
+                  RollNo: rollBox.value,
+                  Section: secBox.value,
+                  Gender: genBox.value
+              })
+              .then(()=>{
+                  alert('data stored sucessfully');
+              })
+              .catch((error)=>{
+                  alert('unsuccessful, error' + error);
+              });
+          }
+  
+          function SelectData(){
+              const dbref = ref(db);
+  
+              get(child(dbref, 'TheStudents/' + rollBox.value))
+              .then((snapshot)=>{
+                  if(snapshot.exists()){
+                      nameBox.value = snapshot.val().NameOfStd;
+                      secBox.value = snapshot.val().Section;
+                      genBox.value = snapshot.val().Gender;
+                  }
+                  else{
+                      alert('No Data Found');
+                  }
+              })
+              .catch((error)=>{
+                  alert('unsuccessful, error' + error);
+              })
+          }
+  
+          function UpdateData(){
+              update(ref(db, 'TheStudents/' + rollBox.value),{
+                  NameOfStd: nameBox.value,
+                  Section: secBox.value,
+                  Gender: genBox.value
+              })
+              .then(()=>{
+                  alert('data updated sucessfully');
+              })
+              .catch((error)=>{
+                  alert('unsuccessful, error' + error);
+              });
+          }
+  
+          function DeleteData(){
+              remove(ref(db, 'TheStudents/' + rollBox.value))
+              .then(()=>{
+                  alert('data remove sucessfully');
+              })
+              .catch((error)=>{
+                  alert('unsuccessful, error' + error);
+              });
+          }
+  
+          insBtn.addEventListener('click', InsertData);
+          selBtn.addEventListener('click', SelectData);
+          updBtn.addEventListener('click', UpdateData);
+          delBtn.addEventListener('click', DeleteData);
+          </script>
+        </article>
+        <aside>
+          <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+          <div class="pa-carousel-widget" style="width: 300px;; height:250px; display:none;"
+            data-link="https://photos.app.goo.gl/6ufCcrHBtcavrana7"
+            data-title="比賽花絮"
+            data-description="43 new items added to shared album"
+            data-delay="3">
+            <object data="https://lh3.googleusercontent.com/_zx-Vwdqq-xPsh6d4UF4XeuA5_FZ1DD49OK6PM8jAc6lO2wE8e6mFVNsTT-x-plRA2A6au9y0DM0-tHWvQx9QAlfF7fwZ-eqnMkwO7F1NVPPKCPhDBJF_DPPvp6A3a501H_SodgTm3o=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/xDvh1HEXYuZLnEPRCFrD9hpOXsJg-hNX7M6K2KGkOd2BrHzl3R3z6VHIzNMOYrFAzcg2tfZT2R4crK2YLcNptIIEtFWRQiAW-r3Eh3AZYLAYrCsx2Uv7Y-Q_IMFHMH0bo6iMaOUTPHY=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/2gmSQgLlLti26nkA9ThTwmH_3JwORI5HO_RHLCX6pjOekWvxEqkaHX18_XJa6GICozJga9F3zPUCpOVwueltKy2XEXBjEjVIDFj51nTwURLwTN3WB8yAvn1RVRFEzS9UOy1u2bYJUbI=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/E7SsUxpXNBfnOhcU5lqoz2i24e347RI8-f3gMEiGhni0X2mzY3j_DNo7iN6jjinRcROwFSTEyFC8Mh38PFH4wrF1EuuvHMaLv__nup02PxKhzGzVr0_hFUUvhhzh2YjKFZEB5Ql21x4=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/Xk3LCcDq7TN9ucnpWyYCMR2Rmz_lwfu61g_72oZerd2D2NpWNPNXkC65FwQk5AQ7WuagOoXBkzWR8ylYcfsEKspx9UYwG30N4gkV-yuXd8uTQdtAl_Af-cMwPQecqnxwlEmFs8I37EI=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/PI6pitXnOwmuCOS01fHekN-eKaIV5sm0EOswuwN1_Sv6S_DswLfs3C_8sQ1ld6coZmsCAjQ1NTckLz_fQ5zsSqkZFleGOhtVFQWAsKDy206rMEepY741MhP0w-QzmtKcgeg0qpvlP_E=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/Zcu9m1K5Bx1KuXexKRN8ccTtUjvbBdhl2jZOpuoFrzIJVdpbKfIubzo0dmVNENaRhMGYulckKsK69ctdHun5dxw44TQ-xF7hNw2eoJU5YVUH3s9MwWukEulaUZfGfAS1ftp3IdOTjPo=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/qyvDL_B5XH17nVVOyVXmcwjgS9bWv9lLavjdhkkHQrf0tX3llVeHBrDNjF7y6aZ2y8CwhZgHy25DA-BI6NhFZOAZKJf7OfyNM5Mh-s5wrCJo_Eoe12hF3eonYL2p3oW_QbO6q-CQIAA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/buaIb9n2VUWrf6yxUHJyOCqM0_jsRadJ9LgPSfXadT1qAPWxh9xUwaaKNncQhxRst86jauCNaiLpB2uQwD8lXeM9zBqtRPy3bh6X8uf-bIoj3GeNUJ4jOCf3ACGvnWxdZPkB7vQsBPM=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/BQxJz63LkpFTDkrnIMxym7IwJmKKvww-h25sSY3hVmAo3tmtbYRSp2X4-eQY7-XqguDqeiyoYfo6iHHz68XShZ8gihxXSWLP0zXMVYzRVIlI9c014arAiy2dNVPFwjCDHCRPqgmeiIg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/Ab18yGhiXnx45woij9mfC_JUbqvLB-l60sNDl6eZqCm4shK1KRlUX6anyJMxazSGgUsZgcRWHboNbrHuWaLOg_uQbJbJth34cN0HHznD1W7eQ3ONgZqJMx69NTHKK5ePkxLhIERBGrY=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/LIrchC-dKYF33kP76rwqvqSo9_gCslYSkoZT-NgyzJCJNcsqjTNyZAR-22UFaXgfC4jtD9dSGGXySCF379X1YE0KIbKH-jtU8fuZel0jHmdA_pc9AxGU8Nr3MrKrzjnU6jVYuUrxX9I=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/DDzr7gJkJwZYadZ3yauXRvcERfNnOJ4X11bTHWjv4VDFFqhORqwl_xCBzzeyE1G-nalsmzChMvRNKbTnB_J7K6drPRLxU4wZ9VKH3luYwtUnOdbHkXsSg2vTiVy8DRRfWkidNk6E5oY=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/y4P9QAskixjshe9o5UYHrhb1CONk7r4mZKOU_nnSipPw2fuh2JpP5QbY7XeZX-gWlM683CiuS72C6UdVERhW6XJKmeKCcvqKVhC3ItJ4NRUHXIVyFp-De4ZIS5GpycnAd1_TRb3Sexc=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/la05Q3U_jeVuoxGuLilRXgQOZD3IqaX8lDTnydiccBbD-QxEgCEm8iggwV9W3qZFPLW6z7fwXmGPID4v63q54a5yTlULVu0yyHc2BKT7ejZRP8Yoe7sNOt6pUA0v7tjvphw3vYbudSM=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/0nMcKgDOO6PT0cqYJdF_k6CRCVi6vAu9qcnPgBXoHFpKXWGAAje09Xz_SHtwvSY4p1hTVaCbIwnDjR_DYZ6nBkdvsFX1YyyIBEkCqg3loGnk6J_5cq602SytSjoXz2BjGsJFD0DC4FY=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/7lvrwH_g6cwJ4fet09WVB1VBTJ3jT9_r79tsken4e9B2rvBmW-KS3AiRkFQ11zkS7OPa-YoboScXY3KU-a2hAeESO_xHM-ESYopB2nJrX2mH7n89Dh58FUO7Y1xdiAYuXL7dJuctvuw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/go6Pv4tXOF-davSukPtOFDvpCReW4xs8Ji5FdaKVxklX2HF_MJUCQwAtVUuc-FATXwPPHAahEl_Pg_-fKCEiKDJdo-oHaFbebcWjf_B_XMy6lgO21sYNeWzdxRTM9K5SymX8oZLwFgo=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/dBVjOMla9xeNH9cqPwgyep_z3anx7U4JfcKn-smcw5GAu_1IZ0PHrOF1nr__1q14zW1q8hN3Nn_nnGFCAzda10gNbBRrMm5J2ypR5DcySeHeI9gi_mPPmm1YBpjE1FZ2D5mlzwgw9bA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/pJPUrtIh1QyvEXyHfoiHSxBciR_3pLYyZDLhIB1i07Zet1fZzQ2QyBSIpV10t2j-ZwvGd22TKWsAyGgByi1aUEuwheS-vbLrcqT2aQzEGBiqSwVoDX8HUXn6b8-eoakeVKO34quZvSs=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/g-XjGHrVtWt5kB7jt-Vxo7pAFRFcNV2KflDLl8NVMPGKKLNkWMxpVok9lszqpSzPHl38TVbRtks0rK8X6EWNZvERm6TB41ZYuTEjD-uZvZ4uegv4kyg-2y1J7efOxYBtQy3MvhHjYXQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/NN8AKMbHc5PdxxKl1oecXO496tLhVBmHp0tlmNAC1zKAynboBK3HKOC2g9dydrB7d3odlWaBgmKIwsohp_a-0Khb2iRlDWFBZGrmMolqPMkCklQJO1iHVPKu744_dW1aCOzBzRHqVX0=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/JCwoKQUxCsZxQ20c30Wftltv_ApqeKVDJqDh_CDmn-lcXFF4tTWqNkfS_vX7BHb25fap3wgVE_Ji-iFSrFjBLezS8mJM6MjRR9GtOEo98uShsdpdoZebajiLOWFURNA9-pO9TZVwZoM=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/6zo-3DfttIbyBb_hQNcRjQRE40HjcCgOx5PV-mUbiVfFJEwF3BDHwOom00GHn29iwOdvC00gFCItsVkykW-Ha6VXBs0gphKS7c5b5A_hI5yRPIfwK6mIxmbleRR74Bk2p3HtVV3ASKA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/EZmsT11Udp7lA6F4NmO8Z5dS2QBRnZck-Hg-BP6wQHDSEK3Mmz5KVM0sKJTob8PdBY2kHgvjHPS7T54AJ7ANgm_PjWTbM_xzgFEwIbVCWkqseIuqmQdEfVTB_5r_x4Tj4eQ-IMy2s5M=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/6TvAC-XM7wIcdK-B9-4-9NzyTwIkuTGXL58xo-jR6mAS4S0w8Qkw7UcSebqJXUvoTWTjTzMpxCeU0bPBkV_GYtwjkuxKU3ZrtIn6zpn_5uPSsk5NB5kjakMWZ6mVU_RWkqCwxAAEMZ8=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/S9oR_0mK8eC6L0ZvUZjJVu3AGnpNXmtEBN41KQkxFwNDk7KLRsJoXbWRaQaHAh5G3njD2jvn_zqiV51l3SDn89LZkZkotjD8qcPg2bAB8yugcEt702rOcwCwXTgvLQAC3VAst2fkfnI=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/18RA0cHbRuPjjNvG4rlzB__WQ_CrrvfwaoPzeg-I85sdWrQW-mHaKbZLGj6mqCiS90psVu3Co3bYG_yciiviPnHz2rnMjj9v8ksECuMx_-roJSABaqupLbgGD3dfUHjLXdVeB5CPZdQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/UUmenRaADXXEVGAGJzGWt_Ue7lwfvxCYIZohmSUCPu73QU3Pa3fg-yDdr3ZvfH3AdhnuVURpeMDbbl9OVDqX4SWIyQMgS4pv4Z9NakhrmbJqiQgxkv5EyBNxNz3Jkk-DUn5FzJne6Fo=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/cbX-At8c026pWSBf4zIEo-hFDySSFBj-vRCNXfXoa6MkTHj2mzhE5nyP4wnuAV91yiTUur17Lox1BSqBTEYxiy4v1hlVoUhBLd1WJRjX4Gb9PL7EFFZYDKYvxtTMtlob-KLIxGLx9BQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/EuN0Xj5tZIMMV6CO-QO6U4CVo5Chh8PxUbK__BWM-ZC0nXFlNRCMhKXoSLmTIvfU0v7ClNLO0sLU7eP1UfzoMatEb9IAuuhn69sDEJuf4dQIjKgAeOi4-A0FXsPjZe6sx7JzxS9P24I=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/4Kd2YFCe8LHSCqJ7uqsGRjc33jjZfRShfpLMyfdTZef-V9dj3dJUd3L5zdEu-PerbQcFGkRjw_irK9uhRE8qhWqhmoi4OKX9tsEXQaDFi7xtD57NIIDPtl2RTA0mT25O9eIPmj19eEA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/F7u-cW0KCUmnWcnrVfZ6cN0trtndPg1p1m6E4pNDzCnQ_YD97eD_C49-DFVyoI_qnqzaCf7wu32ePJmpo1ROAxyLyBAen7giZL1cZcoawo6aJe31MqvJBFK-BJkNVzH-HERuW-rFIUo=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/j65HwYksnzHZ1zdDW4M1xaXmOlcHdt-UzcHCqAi7WsKG86nm0FjJQOF7i2_HQadcH-da9yo03RmbvZFShlOnBa1RaIIuYrzJmm_nwTlltPfiHyTm3XKsTAFw1tzpayL870UqV4o7w-A=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/_6lfHpq7jy9DcXa3Mq_sFwwU_wfHUKT80Y2LtDmW1Gyte0k8UqwX_Ewd6ngiF3onQHyR6CPkMOh3qBPXcN0SfDllJc0i2SE7S7GdBkNZQWYzFa2O_bhCCgxJYaydIWeQ7lx0dkGAKRM=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/haICG1xaG8vHkK0UUGdDsu5jbcaG9WVIsg0jLxWpedSPsseNhjqPHvJfJ5sIrCjdoPHF7jsuUNVToaT8LgnbEKoDBb4y40XiRguAHJS97OMuak2coUauftbVMJdB8TeLccYaZL1Z1LY=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/3NeDDBhGj2n4fdT4cwfPfLZQ5q2cNZU6Mi73BSKpIsZVJjfO5uftnq7qoIL6yge6wAvXQYYJ2B5cqOTtmsbivIRwpq28ZrVM73R0TyDEOXaYfkKN2rOk31_kc45g9zibViEuzc1O0l0=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/WBpqYI0Y7kseL7vipb9km-9EXv20EO1e24g2Dkd7ZYOUX7kZ0ialB44rMdGZoKJ6lr2PLmvCbjAucN84VXZkZwbgDknd5QED_hYbQUDzsAHuGWCaJGSdIMKa2r8PzbNGAPXNM6OtCF0=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/0xWQHsUo7MAa1DLAdTf55-KpbLKcaZOT62GirvaeqkPa316uHwSAvXVMv42UID9m2yM50a_wwv4wze6D_Ql3Fu2x7ciQK8kEkF9Sl9FG95ozFA0yDjhhmGmCZes7FB_h5HCwkj6IOgs=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/qtxvlrUEwWu42S-CSyknEeMsL_wVN7MwZCNXWDnj1KfBLd0TWQadOf6gvIuTh4aQSW61JPcIthkgslajMFlp39CWQ28s0M8JxDOIGUet5-Grkht8SXFjqqZ7xghx_wCFSNx5iP5uak8=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/Qjdkuca80MHnvehbMmgh_E8zsadS5oc1IQgV46UpBDgcelPGhsEHEm4-PX7gUiei5rG_G49Im-w7IJy0ta_BnLWybyODl_M0VjhI6arSjTEC2tMEq2AROqViGC9lpa4k2Ej7covOElI=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/_BlWzAwWrN0evxXe8oIs5d30Ll3Ibn_X_TcLVRQ4eQaE0BYIPq14-0UOqb0g5sxDt0c_xHS4_TdVz2oyLBRR3PCAp_bhFhjybaDGz42qmKIKw8509qepuyIV1TBlPZ6MvqRU8aMrJuE=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/wIZu263Xnn-S3-gwNVAJGjh0lpEYG1YOJBHj_g0HecQNsDbjPJhNPsReN84dz5j-EnL7w19pYpoz6ZBcAYTddttNAwlE8OdbtHQt8bRq9h9fnQynx1uwipEtNKO_thVg8h6Vh75vM2E=w1920-h1080"></object>
+          </div>
+
+          <div class="asi" style="font-size: 20px;">
+            <h3>時間</h3>
+            報名開始：2022/1/08 00:00<br>
+            報名截止：2022/1/11 23:59<br>
+            比賽開始：2022/1/29 09:00<br>
+            比賽結束：2022/1/30 18:00<br>
+          </div>
+          <br>
+          <div class="cal">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%238adaff&ctz=Asia%2FTaipei&src=Y19xY3JyN28zMmhmdmc5bzdzajUwYTBqNzdqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E" style="border:solid 1px #777" width="320" height="295" frameborder="0" scrolling="no"></iframe><br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.0792283366427!2d120.20561121476864!3d22.984113884972523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e768128d07bab%3A0xe5824a37b1ccb6e4!2z5ZyL56uL6Ie65Y2X5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1641367031498!5m2!1szh-TW!2stw" width="320" height="235" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </aside>
+      </div><!--/.maincontent -->
+      <footer>
+        主辦單位：國立台南大學
+      </footer>
+  </body>
+</html>

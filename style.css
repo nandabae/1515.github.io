@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+.logo {
+    width: 300px;
+    margin-top: -10px;
+}
+.main-nav{ 
+    display: flex;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: brown;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.min {
+    margin: 0px auto;
+    max-width: 800px;
+}
+.bigimg {
+    background-size: cover;
+    background-repeat: repeat;
+}
+#home {
+    background-image: url(../img/nanda.jpg);
+    min-height: 100vh;
+    background-blend-mode: luminosity;
+}
+.button {
+    font-size: 1.4rem;
+    background: #eaf6fd;
+    color: #5da9f0;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+.button:hover {
+    background: #5da9f0;
+    color: lightyellow;
+}
+.stobtn {
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.stobtn:hover {
+    background: ivory;   
+    color: rgb(56, 106, 155);
+    cursor: pointer;
+
+}
+.group:hover {
+    cursor: pointer;
+}
+.poi:hover {
+    cursor: pointer;
+}
+h4 {
+    margin-left: 120px;
+}
+h5 {
+    margin-left: 160px;
+}
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.page-title {
+    font-size: 5rem;
+}
+.shape-ex1{
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.shape-ex1:after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s linear;
+}
+.shape-ex1:hover::after{
+    width: 100%;
+}
+article {
+    width: 75%;
+}
+.asi {
+    background-color: rgba(214, 247, 248, 0.767);
+    width: 300px;
+    height: 180px;
+    text-align: center;
+}
+aside {
+    width: 23%;
+    right: 50px;
+    padding-top: 35px;
+}
+.maincontent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+.mov {
+    animation: marginMove 5s infinite alternate;
+}
+@keyframes marginMove {
+    100% {
+        margin-left: 150px;
+    }
+}
+.cal {
+    width: 25px;
+    right: 30px;
+    
+}
+fieldset {
+    padding: 12px;
+    background-color: rgba(214, 247, 248, 0.877);
+}
+footer {
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.pos {
+    width: 420px;
+}
+fieldset {
+    border-radius: 8px;
+    border-width: 2px;
+}
+.leg {
+    padding: 4px 8px;
+    border-radius: 4px;
+    box-shadow:2px 2px 4px #666;
+    font-size: 25px;
+    background-color: rgba(254, 255, 218, 0.897);
+}
+.leg1 {
+    padding: 3px 6px;
+    border-radius: 4px;
+    box-shadow:2px 2px 4px #666;
+    font-size: 20px;
+    background-color: rgba(254, 255, 218, 0.897);
+}
+legend{
+    padding: 5px 9px;
+    border-radius: 4px;
+    box-shadow:2px 2px 4px #666;
+    font-size: 27px;
+    background-color: rgba(254, 255, 218, 0.897);
+}
+#bgbg {
+    background-image: url(../img/pic.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
